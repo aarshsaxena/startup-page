@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.heading {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 72px;
+  margin-top: 100px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subheading {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 26px;
+  margin-top: 8px;
+  color: #999;
+}
+
+.social {
+  margin-top: 60px;
+}
+
+
+.social ul li {
+  display: inline;
+
+}
+
+ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+ul li a {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid white;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  /* background-color:  #99999986; */
+  border-radius: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.container {
+  margin-top: 70px;
+}
+
+.bookmarks {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.bookmarks .links a{
+  font-size: 24px;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  border: 1px solid white;
+  background-color:  #99999986;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.bookmarks .links a:hover{
+  color: black;
+  background-color: white;
+}
+
+/* ...animations... */
+.background-lines {
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -12;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  background-color: #666;
+  animation: lineAnimation 5s infinite linear;
+  opacity: 0.8;
+  /* Optional: Set line opacity */
+}
+
+@keyframes lineAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
